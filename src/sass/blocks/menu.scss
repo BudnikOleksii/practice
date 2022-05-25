@@ -1,0 +1,26 @@
+.menu {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      padding: 3px;
+      font-size: 12px;
+      line-height: 44px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $color-grey-light-1;
+      transition: all 0.5s;
+      text-decoration: none;
+    }
+
+    &:hover {
+      border-bottom: 1px solid $color-main;
+    }
+  }
+}

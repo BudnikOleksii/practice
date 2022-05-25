@@ -1,0 +1,36 @@
+@mixin container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+@mixin row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin heading($fz) {
+  font-size: $fz;
+  line-height: $fz;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $color-headers;
+}
+
+@mixin descr($fz) {
+  font-size: $fz;
+  line-height: 26px;
+  font-weight: 400;
+  color: $color-text-1;
+}
+
+@mixin circle($width) {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $width;
+  height: $width;
+  border-radius: 50%;
+}

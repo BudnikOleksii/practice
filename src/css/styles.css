@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+a {
+  background-color: transparent;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+textarea {
+  overflow: auto;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url("../fonts/roboto-v20-latin-300.woff2") format("woff2"), url("../fonts/roboto-v20-latin-300.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Roboto Black"), local("Roboto-Black"), url("../fonts/roboto-v20-latin-900.woff2") format("woff2"), url("../fonts/roboto-v20-latin-900.woff") format("woff");
+}
+/* open-sans */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/open-sans-v17-latin-300.woff2") format("woff2"), url("../fonts/open-sans-v17-latin-300.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/open-sans-v17-latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v17-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/open-sans-v17-latin-700.woff2") format("woff2"), url("../fonts/open-sans-v17-latin-700.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Open Sans ExtraBold"), local("OpenSans-ExtraBold"), url("../fonts/open-sans-v17-latin-800.woff2") format("woff2"), url("../fonts/open-sans-v17-latin-800.woff") format("woff");
+}
+/* bringin */
+@font-face {
+  font-family: "Bringin";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans ExtraBold"), local("Bringin"), url("../fonts/bringin.woff2") format("woff2"), url("../fonts/bringin.woff") format("woff");
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.page {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.page__nav {
+  position: sticky;
+  top: 0;
+}
+
+::selection {
+  background-color: #36aeea;
+  color: #fff;
+}
+
+.btn {
+  width: 252px;
+  height: 60px;
+  background-color: #36aeea;
+  box-shadow: 0px 0px 35px 0px rgba(2, 3, 3, 0.05);
+  border-radius: 4px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn:active, .btn:focus {
+  outline: none;
+}
+.btn:hover {
+  background-image: linear-gradient(to right, #36aeea, #0083b3);
+  box-shadow: 1px 3px 10px #36aeea;
+  color: #fff;
+  border: none;
+}
+.btn--call {
+  width: 153px;
+  height: 46px;
+  background-color: transparent;
+  border: 3px solid #36aeea;
+  font-size: 12px;
+  color: #36aeea;
+}
+
+.header {
+  min-height: 698px;
+  padding-top: 264px;
+  background: url(../img/bg_1.jpg) center center/cover no-repeat;
+}
+.header__descr {
+  width: 1170px;
+  padding: 0 15px;
+  margin: auto;
+  padding-left: 47px;
+}
+.header__heading {
+  max-width: 45%;
+  font-size: 50px;
+  line-height: 0.8;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #fff;
+  animation: moveInRight 1s ease-out;
+}
+.header__heading span {
+  font-family: "Bringin";
+  font-size: 66px;
+  line-height: 40px;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  color: #56c7ff;
+}
+.header__text {
+  margin: 15px 0 27px 0;
+  max-width: 40%;
+  opacity: 0.74;
+  font-size: 18px;
+  line-height: 29px;
+  color: #fff;
+}
+
+.nav {
+  background-color: rgba(255, 255, 255, 0.23);
+}
+.nav__wrapper {
+  width: 1170px;
+  padding: 0 15px;
+  margin: auto;
+  min-height: 88px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav__brand {
+  margin: 0 61px 0 15px;
+  font-family: "Bringin";
+  font-size: 29px;
+  line-height: 44px;
+  color: #36aeea;
+  animation: moveInLeft 1s ease-out;
+}
+.nav__brand span {
+  color: #95a5ad;
+}
+.nav__menu {
+  width: 514px;
+  margin: 0;
+  margin-right: auto;
+}
+
+.menu {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.menu__link, .menu__link:link, .menu__link:visited {
+  padding: 3px;
+  font-size: 12px;
+  line-height: 44px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #9daeb6;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+.menu__link:hover {
+  border-bottom: 1px solid #36aeea;
+}
+
+.hamburger {
+  display: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

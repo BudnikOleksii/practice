@@ -1,0 +1,41 @@
+.header {
+  min-height: 698px;
+  padding-top: 264px;
+  // position: relative;
+  background: url(../img/bg_1.jpg) center center/cover no-repeat;
+
+  &__descr {
+    @include container();
+    padding-left: 47px;
+  }
+
+  &__heading {
+    max-width: 45%;
+    font-size: 50px;
+    line-height: 0.8;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #fff;
+
+    animation: moveInRight 1s ease-out;
+
+    span {
+      font-family: $font-brigin;
+      font-size: 66px;
+      line-height: 40px;
+      text-transform: none;
+      letter-spacing: 0.02em;
+      color: $color-blue-6;
+    }
+  }
+
+  &__text {
+    margin: 15px 0 27px 0;
+    max-width: 40%;
+    opacity: 0.74;
+    font-size: 18px;
+    line-height: 29px;
+    color: #fff;
+  }
+}
