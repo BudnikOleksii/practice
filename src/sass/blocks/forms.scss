@@ -1,0 +1,43 @@
+.feed-form {
+  width: 855px;
+  height: 62px;
+  background-color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+
+  &__input {
+    padding: 25px 21px;
+    flex: 1;
+    border: none;
+    height: 35px;
+    font-family: $font-roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: $color-grey-light-5;
+    transition: all 0.2s;
+
+    &:not(:last-child) {
+      border-right: 1px solid #ebebeb;
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+
+    &:hover,
+    &:focus:invalid {
+      box-shadow: $shadow-red;
+      border: 1px solid $color-border-danger;
+      border-radius: 4px;
+    }
+
+    &:focus {
+      box-shadow: $shadow-default;
+      border: 2px solid $color-main;
+      border-radius: 4px;
+    }
+  }
+}

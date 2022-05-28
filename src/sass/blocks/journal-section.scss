@@ -7,8 +7,6 @@
   }
 
   &__wave-svg {
-    width: 83px;
-    height: 10px;
     opacity: 0.2;
   }
 
@@ -86,7 +84,6 @@
 
   &__descr {
     margin-bottom: 39px;
-    font-size: 14px;
     line-height: 22px;
     color: $color-text-2;
 
@@ -97,7 +94,6 @@
 
   &__number {
     font-style: italic;
-    font-size: 14px;
     line-height: 17px;
     color: $color-grey-dark-1;
   }

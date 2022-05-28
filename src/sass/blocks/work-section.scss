@@ -1,0 +1,60 @@
+.work {
+  padding: 71px 0 105px;
+  text-align: center;
+
+  &__container {
+    @include container();
+  }
+
+  &__header {
+    @include heading(30px);
+    margin: 36px 0 75px;
+  }
+
+  &__row {
+    @include row();
+  }
+
+  &__item {
+    flex: 0 0 25%;
+    // text-align: center;
+  }
+
+  &__circle {
+    @include circle(48px);
+    background-color: #fff;
+    border: 3px solid $color-main;
+    font-family: $font-roboto, sans-serif;
+    font-size: 16px;
+    line-height: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $color-blue-7;
+  }
+
+  &__icon {
+    @include circle(179px);
+    margin-top: 58px;
+    background: #f0f3f6 url(../icons/work/bg.svg) no-repeat center center;
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.18);
+  }
+
+  &__subheader {
+    margin-top: 29px;
+    font-family: $font-roboto, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 900;
+    color: $color-headers;
+  }
+
+  &__descr {
+    margin: auto;
+    max-width: 205px;
+    font-family: $font-roboto, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: $color-text-1;
+  }
+}
