@@ -1,0 +1,50 @@
+.about {
+  background-color: #f6f4f4;
+
+  &__container {
+    @include container();
+    min-height: 667px;
+    position: relative;
+  }
+
+  &__map-img {
+    position: absolute;
+    top: 23px;
+    left: 100px;
+    opacity: 0.21;
+  }
+
+  &__photo {
+    position: absolute;
+
+    &--1 {
+      top: -36px;
+      left: 549px;
+    }
+
+    &--2 {
+      top: 277px;
+      left: 458px;
+    }
+  }
+
+  &__wave-svg {
+    margin-top: 204px;
+    opacity: 0.2;
+  }
+
+  &__heading {
+    margin: 43px 0 29px 0;
+    @include heading(20px);
+    position: relative;
+    z-index: 1;
+  }
+
+  &__descr {
+    margin-bottom: 30px;
+    max-width: 33%;
+    @include descr(14px);
+    position: relative;
+    z-index: 1;
+  }
+}
