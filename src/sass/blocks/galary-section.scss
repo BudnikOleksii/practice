@@ -1,0 +1,50 @@
+.gallary {
+  padding: 71px 0 79px;
+  text-align: center;
+
+  &__container {
+    @include container();
+  }
+
+  &__heading {
+    margin-top: 36px;
+    margin-bottom: 72px;
+    @include heading(30px);
+  }
+
+  &__row {
+    @include row();
+  }
+
+  &__block {
+    &:not(:last-child) {
+      margin-right: auto;
+    }
+  }
+
+  &__img {
+    display: block;
+    outline-offset: 20px;
+    transition: all 0.2s;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        outline: 15px solid $color-main;
+        transform: scale(1.05) translateY(-5px);
+        box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+        z-index: 20;
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover &__img:not(:hover) {
+      transform: scale(0.95);
+    }
+  }
+}

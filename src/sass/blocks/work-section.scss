@@ -2,6 +2,10 @@
   padding: 71px 0 105px;
   text-align: center;
 
+  &__wave-svg {
+    opacity: 0.2;
+  }
+
   &__container {
     @include container();
   }
