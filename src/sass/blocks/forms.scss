@@ -1,4 +1,4 @@
-.feed-form {
+.feedback-form {
   width: 855px;
   height: 62px;
   background-color: #fff;
@@ -38,6 +38,41 @@
       box-shadow: $shadow-default;
       border: 2px solid $color-main;
       border-radius: 4px;
+    }
+  }
+}
+
+.feedback-main {
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    margin-bottom: 20px;
+    padding: 24px 19px;
+    height: 60px;
+    background-color: #fff;
+    border: 3px solid #fff;
+    border-radius: 4px;
+    font-family: $font-roboto;
+    font-size: 18px;
+    line-height: 1.2;
+    color: $color-grey-light-6;
+    transition: all 0.2s;
+
+    &:hover,
+    &:focus:invalid {
+      box-shadow: $shadow-red;
+      border: 1px solid $color-border-danger;
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+
+    &:focus {
+      box-shadow: $shadow-default;
+      border: 2px solid $color-main;
     }
   }
 }
