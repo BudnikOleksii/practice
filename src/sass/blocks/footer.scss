@@ -8,12 +8,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 15px;
+
+    @media (max-width: 575px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__copyright {
     font-size: 18px;
     line-height: 1.2;
     color: #fff;
+
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
   }
 
   &__social {
@@ -56,11 +65,19 @@
       color: #fff;
       transition: all 0.2s;
       text-decoration: none;
+
+      @media (max-width: 767px) {
+        font-size: 20px;
+      }
     }
 
     &:hover {
       text-decoration: none;
       color: $color-main;
+    }
+
+    @media (max-width: 575px) {
+      flex: 0 0 100%;
     }
   }
 }

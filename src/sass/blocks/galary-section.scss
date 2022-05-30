@@ -7,6 +7,10 @@
     @media (max-width: 1199px) {
       padding: 40px 0;
     }
+
+    @media (max-width: 575px) {
+      padding: 20px 0;
+    }
   }
 
   &__wave-svg {
@@ -17,6 +21,11 @@
     margin-top: 36px;
     margin-bottom: 72px;
     @include heading(30px);
+
+    @media (max-width: 575px) {
+      margin-bottom: 20px;
+      margin-bottom: 30px;
+    }
   }
 
   &__row {

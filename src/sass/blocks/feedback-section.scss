@@ -12,6 +12,10 @@
       min-height: 1240px;
       padding-top: 25px;
     }
+
+    @media (max-width: 575px) {
+      padding-top: 0;
+    }
   }
 
   &__wave-svg {
@@ -22,17 +26,30 @@
     margin-top: 36px;
     margin-bottom: 91px;
     @include heading(30px);
+
+    @media (max-width: 767px) {
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
   }
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
     padding: 40px 15px 0 16px;
     text-align: left;
     position: relative;
+
+    @media (max-width: 767px) {
+      margin-bottom: 40px;
+    }
 
     &::before {
       content: '\201C';
@@ -57,6 +74,12 @@
     @media (max-width: 991px) {
       font-size: 14px;
     }
+
+    @media (max-width: 767px) {
+      margin-bottom: 10px;
+      font-size: 13px;
+      line-height: 20px;
+    }
   }
 
   &__img-block {
@@ -65,6 +88,8 @@
     line-height: 33px;
     font-weight: 300;
     color: $color-main;
+    display: flex;
+    align-items: center;
 
     span {
       margin-left: 20px;
@@ -80,6 +105,14 @@
     box-shadow: 2px 4px 51px 0px rgba(0, 0, 0, 0.75);
     background-color: rgba(255, 255, 255, 0.18);
     border-radius: 8px;
+
+    @media (max-width: 767px) {
+      margin-top: 0;
+    }
+
+    @media (max-width: 575px) {
+      width: 100%;
+    }
   }
 
   &__form-header {

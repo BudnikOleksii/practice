@@ -7,6 +7,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    @media (max-width: 767px) {
+      justify-content: space-between;
+    }
   }
 
   &__brand {
