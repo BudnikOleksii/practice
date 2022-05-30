@@ -5,6 +5,14 @@
     @include container();
     min-height: 667px;
     position: relative;
+
+    @media (max-width: 1199px) {
+      min-height: 575px;
+    }
+
+    @media (max-width: 991px) {
+      min-height: 430px;
+    }
   }
 
   &__map-img {
@@ -12,6 +20,11 @@
     top: 23px;
     left: 100px;
     opacity: 0.21;
+
+    @media (max-width: 1199px) {
+      width: 90%;
+      left: 7%;
+    }
   }
 
   &__photo {
@@ -19,18 +32,33 @@
 
     &--1 {
       top: -36px;
-      left: 549px;
+      left: 499px;
+
+      @media (max-width: 1199px) {
+        width: 50%;
+        left: 45%;
+      }
     }
 
     &--2 {
       top: 277px;
       left: 458px;
+
+      @media (max-width: 1199px) {
+        width: 30%;
+        left: 35%;
+        top: 45%;
+      }
     }
   }
 
   &__wave-svg {
     margin-top: 204px;
     opacity: 0.2;
+
+    @media (max-width: 991px) {
+      margin-top: 50px;
+    }
   }
 
   &__heading {

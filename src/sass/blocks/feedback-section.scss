@@ -7,6 +7,11 @@
     padding-top: 69px;
     position: relative;
     text-align: center;
+
+    @media (max-width: 991px) {
+      min-height: 1240px;
+      padding-top: 25px;
+    }
   }
 
   &__wave-svg {
@@ -48,6 +53,10 @@
     font-size: 18px;
     line-height: 33px;
     color: $color-grey-light-3;
+
+    @media (max-width: 991px) {
+      font-size: 14px;
+    }
   }
 
   &__img-block {

@@ -1,11 +1,20 @@
 .header {
-  min-height: 698px;
-  padding-top: 264px;
   background: url(../img/bg_1.jpg) center center/cover no-repeat;
 
   &__descr {
     @include container();
     padding-left: 47px;
+    min-height: 698px;
+    padding-top: 264px;
+
+    @media (max-width: 1199px) {
+      min-height: 600px;
+    }
+
+    @media (max-width: 991px) {
+      min-height: 500px;
+      padding-top: 200px;
+    }
   }
 
   &__heading {
@@ -16,8 +25,15 @@
     text-transform: uppercase;
     letter-spacing: 0.12em;
     color: #fff;
-
     animation: moveInRight 1s ease-out;
+
+    @media (max-width: 1199px) {
+      max-width: 62%;
+    }
+
+    @media (max-width: 991px) {
+      font-size: 40px;
+    }
 
     span {
       font-family: $font-brigin;
@@ -26,6 +42,10 @@
       text-transform: none;
       letter-spacing: 0.02em;
       color: $color-blue-6;
+
+      @media (max-width: 991px) {
+        font-size: 59px;
+      }
     }
   }
 
@@ -36,5 +56,13 @@
     font-size: 18px;
     line-height: 29px;
     color: #fff;
+
+    @media (max-width: 1199px) {
+      max-width: 52%;
+    }
+
+    @media (max-width: 991px) {
+      font-size: 16px;
+    }
   }
 }

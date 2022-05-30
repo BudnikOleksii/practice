@@ -1,9 +1,16 @@
 .gallary {
-  padding: 71px 0 79px;
-  text-align: center;
-
   &__container {
     @include container();
+    padding: 71px 0 79px;
+    text-align: center;
+
+    @media (max-width: 1199px) {
+      padding: 40px 0;
+    }
+  }
+
+  &__wave-svg {
+    opacity: 0.2;
   }
 
   &__heading {
@@ -17,6 +24,14 @@
   }
 
   &__block {
+    @media (max-width: 1199px) {
+      width: 100%;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
     &:not(:last-child) {
       margin-right: auto;
     }
@@ -27,6 +42,10 @@
     outline-offset: 20px;
     transition: all 0.2s;
     position: relative;
+
+    @media (max-width: 1199px) {
+      width: 45%;
+    }
 
     &:not(:last-child) {
       margin-bottom: 30px;

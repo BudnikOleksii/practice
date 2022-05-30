@@ -5,6 +5,11 @@
     @include container();
     padding-top: 146px;
     min-height: 650px;
+
+    @media (max-width: 1199px) {
+      padding-top: 40px;
+      min-height: 470px;
+    }
   }
 
   &__wave-svg {

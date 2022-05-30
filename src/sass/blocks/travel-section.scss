@@ -2,6 +2,10 @@
   background: url(../img/bg_3.jpg) center bottom no-repeat;
   text-align: center;
 
+  @media (max-width: 1199px) {
+    background-size: contain;
+  }
+
   &__wave-svg {
     opacity: 0.2;
   }
@@ -10,12 +14,20 @@
     @include container();
     min-height: 1020px;
     background: url(../img/travel/worldmap.png) center top no-repeat;
+
+    @media (max-width: 1199px) {
+      min-height: 860px;
+    }
   }
 
   &__heading {
     margin-top: 36px;
     margin-bottom: 97px;
     @include heading(30px);
+
+    @media (max-width: 991px) {
+      margin-bottom: 40px;
+    }
   }
 
   &__row {
@@ -29,6 +41,21 @@
     border-radius: 4px;
     text-align: left;
     color: #fff;
+
+    @media (max-width: 1199px) {
+      width: 19%;
+    }
+
+    @media (max-width: 991px) {
+      margin-left: auto;
+      margin-bottom: 15px;
+      height: 365px;
+      width: 27%;
+
+      &:last-child {
+        margin-right: auto;
+      }
+    }
 
     &:not(:last-child) {
       margin-right: auto;
@@ -62,6 +89,10 @@
   &__article {
     margin-top: 114px;
     margin-bottom: 100px;
+
+    @media (max-width: 1199px) {
+      margin-top: 95px;
+    }
   }
 
   &__location {

@@ -15,8 +15,11 @@
     font-size: 29px;
     line-height: 44px;
     color: $color-main;
-
     animation: moveInLeft 1s ease-out;
+
+    @media (max-width: 991px) {
+      margin: 0 15px;
+    }
 
     span {
       color: $color-grey-light-2;

@@ -2,6 +2,27 @@
   width: 1170px;
   padding: 0 15px;
   margin: auto;
+
+  @media (max-width: 1199px) {
+    max-width: 960px;
+  }
+
+  @media (max-width: 991px) {
+    max-width: 760px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 575px;
+  }
+
+  @media (max-width: 575px) {
+    max-width: 400px;
+  }
+
+  @media (max-width: 400px) {
+    max-width: 320px;
+    padding: 0 5px;
+  }
 }
 
 @mixin row {

@@ -1,9 +1,12 @@
 .journal {
-  padding: 71px 0 90px 0;
-  text-align: center;
-
   &__container {
     @include container();
+    padding: 71px 0 90px 0;
+    text-align: center;
+
+    @media (max-width: 1199px) {
+      padding: 40px 15px;
+    }
   }
 
   &__wave-svg {
@@ -52,6 +55,10 @@
     flex: 0 0 33.333333%;
     padding: 47px 54px;
     text-align: center;
+
+    @media (max-width: 1199px) {
+      padding: 20px;
+    }
   }
 
   &__name {
@@ -61,7 +68,6 @@
     text-transform: uppercase;
     letter-spacing: 0.15em;
     color: $color-blue-1;
-    margin-bottom: 55px;
 
     &--1 {
       color: $color-blue-2;
@@ -69,6 +75,7 @@
   }
 
   &__header {
+    margin-top: 55px;
     margin-bottom: 27px;
     font-size: 16px;
     line-height: 24px;
@@ -76,6 +83,12 @@
     text-transform: uppercase;
     letter-spacing: 0.15em;
     color: $color-grey-dark-1;
+
+    @media (max-width: 991px) {
+      margin-top: 25px;
+      margin-bottom: 20px;
+      font-size: 12px;
+    }
 
     &--2 {
       color: $color-grey-dark-2;
@@ -86,6 +99,10 @@
     margin-bottom: 39px;
     line-height: 22px;
     color: $color-text-2;
+
+    @media (max-width: 991px) {
+      font-size: 11px;
+    }
 
     &--3 {
       color: $color-text-3;

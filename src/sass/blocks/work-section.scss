@@ -2,6 +2,10 @@
   padding: 71px 0 105px;
   text-align: center;
 
+  @media (max-width: 991px) {
+    padding: 30px 0;
+  }
+
   &__wave-svg {
     opacity: 0.2;
   }
@@ -10,9 +14,13 @@
     @include container();
   }
 
-  &__header {
+  &__heading {
     @include heading(30px);
     margin: 36px 0 75px;
+
+    @media (max-width: 991px) {
+      margin: 30px 0 40px;
+    }
   }
 
   &__row {
@@ -41,6 +49,12 @@
     margin-top: 58px;
     background: #f0f3f6 url(../icons/work/bg.svg) no-repeat center center;
     box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.18);
+
+    @media (max-width: 991px) {
+      margin-top: 30px;
+      width: 145px;
+      height: 145px;
+    }
   }
 
   &__subheader {
@@ -50,6 +64,11 @@
     line-height: 24px;
     font-weight: 900;
     color: $color-headers;
+
+    @media (max-width: 991px) {
+      margin-top: 20px;
+      font-size: 16px;
+    }
   }
 
   &__descr {
@@ -60,5 +79,9 @@
     line-height: 24px;
     font-weight: 300;
     color: $color-text-1;
+
+    @media (max-width: 991px) {
+      font-size: 13px;
+    }
   }
 }

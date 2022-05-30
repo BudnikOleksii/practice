@@ -5,6 +5,10 @@
   align-items: center;
   list-style: none;
 
+  @media (max-width: 991px) {
+    margin-right: 10px;
+  }
+
   &__link {
     &,
     &:link,
